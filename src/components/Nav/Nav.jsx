@@ -8,7 +8,7 @@ const Nav = () => {
 
 
       return (
-            <nav className={`${pathname === "/home" && 'bg-[#9538E2] navLinksWhite '} bg-white py-3  mt-6 lg:mx-6`} id="navBar">
+            <nav className={`${pathname === "/home" && 'bg-[#9538E2] navLinksWhite '} bg-white py-3  md:mt-6 lg:mx-6`} id="navBar">
                   <div className="navbar container mx-auto ">
                         <div className="navbar-start">
                               <div className="dropdown">
@@ -17,7 +17,7 @@ const Nav = () => {
                                     </div>
                                     <ul
                                           tabIndex={0}
-                                          className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow text-black">
+                                          className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow text-black" id="dropNav">
                                           <NavLink to='/home'>Home</NavLink>
                                           <NavLink to='/statistics'>Statistics</NavLink>
                                           <NavLink to='/dashboard'>Dashboard</NavLink>
