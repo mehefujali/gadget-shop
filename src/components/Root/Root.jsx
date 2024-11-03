@@ -1,9 +1,9 @@
 
 const Root = () => {
       return (
-            <div>
+            <nav>
 
-            </div>
+            </nav>
       );
 };
 
