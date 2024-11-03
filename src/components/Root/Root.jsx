@@ -7,7 +7,7 @@ const Root = () => {
                   <header>
                         <Nav></Nav>
                   </header>
-                  <main className=" container mx-auto">
+                  <main className=" ">
                         <Outlet></Outlet>
                   </main>
                   <footer>

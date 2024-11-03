@@ -8,7 +8,7 @@ const Nav = () => {
 
 
       return (
-            <nav className={`${pathname === "/home" && 'bg-primary-color navLinksWhite '} bg-white py-3  mt-6 lg:mx-6`} id="navBar">
+            <nav className={`${pathname === "/home" && 'bg-[#9538E2] navLinksWhite '} bg-white py-3  mt-6 lg:mx-6`} id="navBar">
                   <div className="navbar container mx-auto ">
                         <div className="navbar-start">
                               <div className="dropdown">
