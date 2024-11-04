@@ -23,7 +23,7 @@ const Products = () => {
       return (
             <div className=" p-6 ">
                   {
-                        products.length < 1 ? <h1 className=" text-center mt-10 text-xl">No data available</h1> : <div className=" grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-7">
+                        products.length < 1 ? <h1 className=" text-center mt-10 text-xl">No data available</h1> : <div className=" grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-7">
                               {products.map(product => <Product key={product.id} product={product}></Product>)}
                         </div>
                   }
