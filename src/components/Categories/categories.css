@@ -2,3 +2,12 @@
       background-color: #9538E2;
       color: white;
 }
+
+
+@media screen and (max-width:900px) {
+      #categories {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+      }
+}

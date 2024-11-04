@@ -7,6 +7,7 @@ import './nav.css'
 const Nav = () => {
       const { pathname } = useLocation()
 
+
       return (
             <div className=" lg:pt-6">
                   <nav className={`${pathname.includes('/home') ? ' bg-primary-color navLinksWhite ' : 'bg-transparent text-black'}  py-3  lg:mx-6`} id="navBar">
