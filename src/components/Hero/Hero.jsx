@@ -9,7 +9,7 @@ const Hero = () => {
 
                         <Link to='/dashboard'><button className=" btn bg-white text-primary-color mt-6 rounded-full text-xl font-bold px-7">Shop now</button></Link>
                   </div>
-                  <div className=" max-w-6xl mx-auto relative top-16 border-2 border-white p-6 rounded-2xl">
+                  <div className=" max-w-6xl mx-auto relative top-16 border-2 border-white bg-white bg-opacity-25 p-6 rounded-2xl">
                         <img className=" rounded-2xl w-full max-h-[563px] object-cover " src="https://i.ibb.co/cvBztwq/banner.jpg" alt="" />
                   </div>
             </div>
