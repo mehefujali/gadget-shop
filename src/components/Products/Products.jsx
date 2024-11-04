@@ -23,7 +23,12 @@ const Products = () => {
       return (
             <div className=" p-6 ">
                   {
-                        products.length < 1 ? <h1 className=" text-center mt-10 text-xl">No data available</h1> : <div className=" grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-7">
+                        products.length < 1 ? <div className=" flex gap-2 flex-col">
+
+                              <img className=" mt-10 max-w-44 mx-auto" src="https://i.postimg.cc/pLch18n0/image.png" alt="" />
+
+                              <h1 className=" text-center text-gray-600  text-4xl">No data available</h1>
+                        </div> : <div className=" grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-7">
                               {products.map(product => <Product key={product.id} product={product}></Product>)}
                         </div>
                   }
