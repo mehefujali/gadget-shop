@@ -10,12 +10,14 @@ import Root from './components/Root/Root';
 import Home from './components/Home/Home';
 import Dashboard from './components/Dashboard/Dashboard';
 import Products from './components/Products/Products';
+import Error from './components/Error/Error';
 
 
 
 
 const router = createBrowserRouter([
   {
+    errorElement: <Error></Error>,
     path: "/",
     element: <Root></Root>,
     children: [
