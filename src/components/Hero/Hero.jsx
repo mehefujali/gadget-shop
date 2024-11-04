@@ -9,8 +9,8 @@ const Hero = () => {
 
                         <Link to='/dashboard'><button className=" btn bg-white text-primary-color mt-6 rounded-full text-xl font-bold px-7">Shop now</button></Link>
                   </div>
-                  <div className=" max-w-6xl mx-auto relative top-16 border-2 border-white bg-white bg-opacity-25 p-6 rounded-2xl">
-                        <img className=" rounded-2xl w-full max-h-[563px] object-cover " src="https://i.ibb.co/cvBztwq/banner.jpg" alt="" />
+                  <div className=" max-w-72 sm:max-w-2xl  lg:max-w-3xl xl:max-w-5xl mx-auto relative top-32 md:top-16 border-2 border-white bg-white bg-opacity-25 p-6 rounded-2xl">
+                        <img className=" rounded-2xl w-full max-h-[563px] object-cover " src="https://i.postimg.cc/fRKtDMN3/banner.jpg" alt="Banner image" />
                   </div>
             </div>
       );

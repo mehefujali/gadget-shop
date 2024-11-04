@@ -7,7 +7,7 @@ const Product = ({ product }) => {
             <div>
                   <div className=" w-full h-full p-4 rounded-lg border-2 bg-white shadow-lg flex flex-col justify-between gap-1">
                         <div>
-                              <img className=" mb-3 max-w-72 max-h-96 object-cover mx-auto" src={product_image} alt="" />
+                              <img className=" mb-3 max-w-60 h-80 object-contain mx-auto" src={product_image} alt="" />
                         </div>
                         <h1 className=" text-xl font-semibold">{product_title}</h1>
                         <p className=" text-lg ">Price ${price}</p>

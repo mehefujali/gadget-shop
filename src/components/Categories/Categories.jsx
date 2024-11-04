@@ -19,7 +19,7 @@ const Categories = () => {
                   {
                         categories.map(category =>
                               <NavLink key={category.id} to={`/home/products/${category.path}`}
-                                    className=" px-4 py-3 cursor-pointer rounded-xl bg-[#09080F0D]"
+                                    className=" px-4  cursor-pointer btn btn-sm md:btn-md rounded-xl bg-[#09080F0D]"
                               >{category.name}
                               </NavLink>
                         )
