@@ -1,0 +1,350 @@
+[
+      {
+            "product_id": 201,
+            "product_title": "Phone A12",
+            "product_image": "https://images.pexels.com/photos/607812/pexels-photo-607812.jpeg",
+            "category": "Phones",
+            "price": 600,
+            "description": "A sleek smartphone with powerful features.",
+            "specification": [
+                  "Snapdragon 870 Processor",
+                  "8GB RAM",
+                  "128GB Storage",
+                  "48MP Camera"
+            ],
+            "availability": true,
+            "rating": 4.2
+      },
+      {
+            "product_id": 202,
+            "product_title": "Phone B23",
+            "product_image": "https://images.pexels.com/photos/1092644/pexels-photo-1092644.jpeg",
+            "category": "Phones",
+            "price": 750,
+            "description": "A premium phone with a stunning display.",
+            "specification": [
+                  "Exynos 990 Processor",
+                  "12GB RAM",
+                  "256GB Storage",
+                  "5000mAh Battery"
+            ],
+            "availability": true,
+            "rating": 4.8
+      },
+      {
+            "product_id": 203,
+            "product_title": "Phone C34",
+            "product_image": "https://images.pexels.com/photos/607812/pexels-photo-607812.jpeg",
+            "category": "Phones",
+            "price": 400,
+            "description": "A budget-friendly phone with essential features.",
+            "specification": [
+                  "MediaTek Processor",
+                  "4GB RAM",
+                  "64GB Storage",
+                  "12MP Camera"
+            ],
+            "availability": false,
+            "rating": 3.9
+      },
+      {
+            "product_id": 301,
+            "product_title": "Smart Watch X",
+            "product_image": "https://images.pexels.com/photos/267394/pexels-photo-267394.jpeg",
+            "category": "Smart Watches",
+            "price": 200,
+            "description": "Stylish and versatile smartwatch with health tracking.",
+            "specification": [
+                  "1.6 inch OLED Display",
+                  "Heart Rate Monitor",
+                  "Water Resistant"
+            ],
+            "availability": true,
+            "rating": 4.3
+      },
+      {
+            "product_id": 302,
+            "product_title": "Fit Tracker 2",
+            "product_image": "https://images.pexels.com/photos/267394/pexels-photo-267394.jpeg",
+            "category": "Smart Watches",
+            "price": 150,
+            "description": "Lightweight fitness tracker with multiple sport modes.",
+            "specification": [
+                  "1.2 inch LCD Display",
+                  "Step Counter",
+                  "Water Resistant"
+            ],
+            "availability": true,
+            "rating": 4.1
+      },
+      {
+            "product_id": 303,
+            "product_title": "Luxury Smart Watch",
+            "product_image": "https://images.pexels.com/photos/267394/pexels-photo-267394.jpeg",
+            "category": "Smart Watches",
+            "price": 300,
+            "description": "Premium smart watch with a luxurious design.",
+            "specification": [
+                  "1.8 inch AMOLED Display",
+                  "Built-in GPS",
+                  "Water Resistant"
+            ],
+            "availability": false,
+            "rating": 4.4
+      },
+      {
+            "product_id": 401,
+            "product_title": "Fast Charger Pro",
+            "product_image": "https://images.pexels.com/photos/404280/pexels-photo-404280.jpeg",
+            "category": "Chargers",
+            "price": 25,
+            "description": "Fast and efficient charger for multiple devices.",
+            "specification": [
+                  "18W Fast Charging",
+                  "USB-C Port",
+                  "Compact Design"
+            ],
+            "availability": true,
+            "rating": 4.7
+      },
+      {
+            "product_id": 402,
+            "product_title": "Wireless Charger Pad",
+            "product_image": "https://images.pexels.com/photos/404280/pexels-photo-404280.jpeg",
+            "category": "Chargers",
+            "price": 30,
+            "description": "Convenient wireless charging pad for smartphones.",
+            "specification": [
+                  "Qi Wireless Charging",
+                  "10W Fast Charging",
+                  "Slim Design"
+            ],
+            "availability": true,
+            "rating": 4.5
+      },
+      {
+            "product_id": 403,
+            "product_title": "Car Charger Duo",
+            "product_image": "https://images.pexels.com/photos/404280/pexels-photo-404280.jpeg",
+            "category": "Chargers",
+            "price": 15,
+            "description": "Dual-port car charger for on-the-go charging.",
+            "specification": [
+                  "12W Charging",
+                  "Dual USB Ports",
+                  "LED Indicator"
+            ],
+            "availability": false,
+            "rating": 4.1
+      },
+      {
+            "product_id": 501,
+            "product_title": "Power Bank Max",
+            "product_image": "https://images.pexels.com/photos/404280/pexels-photo-404280.jpeg",
+            "category": "Power Banks",
+            "price": 45,
+            "description": "High-capacity power bank for all-day charging.",
+            "specification": [
+                  "20000mAh Capacity",
+                  "Dual USB Ports",
+                  "Fast Charging Support"
+            ],
+            "availability": true,
+            "rating": 4.6
+      },
+      {
+            "product_id": 502,
+            "product_title": "Mini Power Bank",
+            "product_image": "https://images.pexels.com/photos/404280/pexels-photo-404280.jpeg",
+            "category": "Power Banks",
+            "price": 20,
+            "description": "Compact power bank for quick recharges on the go.",
+            "specification": [
+                  "10000mAh Capacity",
+                  "Single USB Port",
+                  "Lightweight Design"
+            ],
+            "availability": true,
+            "rating": 4.0
+      },
+      {
+            "product_id": 503,
+            "product_title": "Solar Power Bank",
+            "product_image": "https://images.pexels.com/photos/404280/pexels-photo-404280.jpeg",
+            "category": "Power Banks",
+            "price": 60,
+            "description": "Eco-friendly power bank with solar charging capabilities.",
+            "specification": [
+                  "15000mAh Capacity",
+                  "Dual USB Ports",
+                  "Solar Panel"
+            ],
+            "availability": true,
+            "rating": 4.3
+      },
+      {
+            "product_id": 601,
+            "product_title": "Tablet Z10",
+            "product_image": "https://images.pexels.com/photos/508256/pexels-photo-508256.jpeg",
+            "category": "Tablets",
+            "price": 350,
+            "description": "A versatile tablet for work and entertainment.",
+            "specification": [
+                  "10.5 inch Full HD Display",
+                  "4GB RAM",
+                  "64GB Storage"
+            ],
+            "availability": false,
+            "rating": 4.1
+      },
+      {
+            "product_id": 602,
+            "product_title": "Tablet Mini 8",
+            "product_image": "https://images.pexels.com/photos/508256/pexels-photo-508256.jpeg",
+            "category": "Tablets",
+            "price": 250,
+            "description": "Compact and portable tablet for everyday use.",
+            "specification": [
+                  "8 inch HD Display",
+                  "3GB RAM",
+                  "32GB Storage"
+            ],
+            "availability": true,
+            "rating": 4.3
+      },
+      {
+            "product_id": 603,
+            "product_title": "Tablet Pro Max",
+            "product_image": "https://images.pexels.com/photos/508256/pexels-photo-508256.jpeg",
+            "category": "Tablets",
+            "price": 500,
+            "description": "High-performance tablet with stunning visuals.",
+            "specification": [
+                  "12.9 inch Retina Display",
+                  "6GB RAM",
+                  "256GB Storage"
+            ],
+            "availability": true,
+            "rating": 4.7
+      },
+      {
+            "product_id": 701,
+            "product_title": "Wireless Headphones Pro",
+            "product_image": "https://images.pexels.com/photos/508256/pexels-photo-508256.jpeg",
+            "category": "Headphones",
+            "price": 120,
+            "description": "High-quality wireless headphones with noise cancellation.",
+            "specification": [
+                  "Bluetooth 5.0",
+                  "Active Noise Cancellation",
+                  "20 Hours Battery Life"
+            ],
+            "availability": true,
+            "rating": 4.4
+      },
+      {
+            "product_id": 702,
+            "product_title": "Gaming Headset X",
+            "product_image": "https://images.pexels.com/photos/508256/pexels-photo-508256.jpeg",
+            "category": "Headphones",
+            "price": 85,
+            "description": "Immersive gaming headset with surround sound.",
+            "specification": [
+                  "7.1 Surround Sound",
+                  "Noise-Canceling Microphone",
+                  "RGB Lighting"
+            ],
+            "availability": true,
+            "rating": 4.6
+      },
+      {
+            "product_id": 703,
+            "product_title": "Sport Earbuds",
+            "product_image": "https://images.pexels.com/photos/508256/pexels-photo-508256.jpeg",
+            "category": "Headphones",
+            "price": 45,
+            "description": "Lightweight and water-resistant earbuds for workouts.",
+            "specification": [
+                  "Water Resistant",
+                  "Bluetooth 5.0",
+                  "6 Hours Battery Life"
+            ],
+            "availability": false,
+            "rating": 4.2
+      },
+      {
+            "product_id": 801,
+            "product_title": "Studio Headphones",
+            "product_image": "https://images.pexels.com/photos/508256/pexels-photo-508256.jpeg",
+            "category": "Headphones",
+            "price": 130,
+            "description": "Professional headphones for studio-quality sound.",
+            "specification": [
+                  "Closed-back Design",
+                  "50mm Drivers",
+                  "Detachable Cable"
+            ],
+            "availability": true,
+            "rating": 4.7
+      },
+      {
+            "product_id": 802,
+            "product_title": "Over-Ear Headphones",
+            "product_image": "https://images.pexels.com/photos/508256/pexels-photo-508256.jpeg",
+            "category": "Headphones",
+            "price": 100,
+            "description": "Comfortable over-ear headphones with deep bass.",
+            "specification": [
+                  "Bluetooth 4.2",
+                  "25 Hours Battery Life",
+                  "Comfort Fit"
+            ],
+            "availability": true,
+            "rating": 4.3
+      },
+      {
+            "product_id": 803,
+            "product_title": "Wireless Sports Earbuds",
+            "product_image": "https://images.pexels.com/photos/508256/pexels-photo-508256.jpeg",
+            "category": "Headphones",
+            "price": 55,
+            "description": "Durable earbuds designed for sports and workouts.",
+            "specification": [
+                  "IPX7 Water Resistant",
+                  "Secure Fit",
+                  "5 Hours Battery Life"
+            ],
+            "availability": true,
+            "rating": 4.0
+      },
+      {
+            "product_id": 804,
+            "product_title": "Active Noise-Cancelling Headphones",
+            "product_image": "https://images.pexels.com/photos/508256/pexels-photo-508256.jpeg",
+            "category": "Headphones",
+            "price": 180,
+            "description": "Premium headphones with active noise cancellation.",
+            "specification": [
+                  "Bluetooth 5.0",
+                  "ANC Technology",
+                  "30 Hours Battery Life"
+            ],
+            "availability": true,
+            "rating": 4.8
+      },
+      {
+            "product_id": 805,
+            "product_title": "Kids Bluetooth Headphones",
+            "product_image": "https://images.pexels.com/photos/508256/pexels-photo-508256.jpeg",
+            "category": "Headphones",
+            "price": 40,
+            "description": "Child-friendly headphones with volume limit.",
+            "specification": [
+                  "Volume Limiting",
+                  "Bluetooth 5.0",
+                  "Foldable Design"
+            ],
+            "availability": true,
+            "rating": 4.3
+      }
+]

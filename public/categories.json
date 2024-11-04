@@ -2,36 +2,36 @@
       {
             "id": 1,
             "name": "All Products",
-            "path": "/categories/all-products"
+            "path": "all-products"
       },
       {
             "id": 2,
             "name": "Phones",
-            "path": "/categories/phones"
+            "path": "phones"
       },
       {
             "id": 3,
             "name": "Smart Watches",
-            "path": "/categories/smart-watches"
+            "path": "smart-watches"
       },
       {
             "id": 4,
             "name": "Chargers",
-            "path": "/categories/chargers"
+            "path": "chargers"
       },
       {
             "id": 5,
             "name": "Power Banks",
-            "path": "/categories/power-banks"
+            "path": "power-banks"
       },
       {
             "id": 6,
             "name": "Tablets",
-            "path": "/categories/tablets"
+            "path": "tablets"
       },
       {
             "id": 7,
             "name": "Headphones",
-            "path": "/categories/headphones"
+            "path": "headphones"
       }
 ]

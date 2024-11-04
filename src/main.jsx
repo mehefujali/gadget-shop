@@ -9,6 +9,7 @@ import {
 import Root from './components/Root/Root';
 import Home from './components/Home/Home';
 import Dashboard from './components/Dashboard/Dashboard';
+import Products from './components/Products/Products';
 
 
 
@@ -24,7 +25,18 @@ const router = createBrowserRouter([
       },
       {
         path: '/home',
-        element: <Home></Home>
+        element: <Home></Home>,
+        children: [
+          {
+            path: '/home',
+            element: <Navigate to='/home/products/all-products' replace></Navigate>
+          },
+          {
+            path: '/home/products/:category',
+            element: <Products></Products>
+
+          }
+        ]
       },
       {
         path: '/statistics',

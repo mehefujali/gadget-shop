@@ -3,7 +3,7 @@ import Nav from "../Nav/Nav";
 
 const Root = () => {
       return (
-            <div style={{ backgroundColor: 'rgba(9, 8, 15, 0.05)' }}>
+            <div>
                   <header>
                         <Nav></Nav>
                   </header>
