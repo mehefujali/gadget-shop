@@ -4,7 +4,7 @@ import { CiHeart } from "react-icons/ci";
 import { FaBars } from "react-icons/fa";
 import './nav.css'
 
-import { ToastContainer, toast } from 'react-toastify';
+import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
 const Nav = () => {

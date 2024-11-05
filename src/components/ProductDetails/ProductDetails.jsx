@@ -2,6 +2,7 @@ import { ScrollRestoration, useLoaderData, useParams } from "react-router-dom";
 import { IoCartOutline } from "react-icons/io5";
 import { CiHeart } from "react-icons/ci";
 import { setDataToLocal } from "../../utility/localstorage";
+import { toast } from "react-toastify";
 const ProductDetails = () => {
       const { productId } = useParams()
       const products = useLoaderData()
@@ -43,7 +44,7 @@ const ProductDetails = () => {
                                                 </div>
                                                 <div className=" flex gap-4">
                                                       <button
-                                                            onClick={() => setDataToLocal("cart", productId)}
+                                                            onClick={() => availability ? setDataToLocal("cart", productId) : toast.error("Product out of stock")}
                                                             className=" btn flex items-center gap-2 bg-primary-color text-white">Add to cart <IoCartOutline className="text-xl" /></button>
                                                       <span className=" btn btn-circle  text-2xl border-primary-color"><CiHeart /></span>
                                                 </div>
