@@ -17,7 +17,7 @@ const Cart = () => {
                   .then(res => res.json())
                   .then(data => setProducts(data))
       }, [])
-      const { setCart } = useContext(CartContext)
+
 
       const filterCartProduct = products.filter(product => cartProductsId.includes(product.product_id.toString()))
 

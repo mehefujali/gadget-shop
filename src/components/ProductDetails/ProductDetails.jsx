@@ -19,6 +19,10 @@ const ProductDetails = () => {
             const cartsData = getDataFromLocal("cart")
             setCart(cartsData)
       }
+      const handleAddWishlist = (productId) => {
+            setDataToLocal("wishlist", productId)
+
+      }
 
 
       return (
@@ -53,8 +57,16 @@ const ProductDetails = () => {
                                                 <div className=" flex gap-4">
                                                       <button
                                                             onClick={() => availability ? handleAddCart(productId) : toast.error("Product out of stock")}
-                                                            className=" btn flex items-center gap-2 bg-primary-color text-white">Add to cart <IoCartOutline className="text-xl" /></button>
-                                                      <span className=" btn btn-circle  text-2xl border-primary-color"><CiHeart /></span>
+                                                            className=" btn flex items-center gap-2 bg-primary-color text-white">Add to cart <IoCartOutline className="text-xl" />
+                                                      </button>
+
+
+                                                      <span
+                                                            onClick={() => availability ? handleAddWishlist(productId) : toast.error("Product out of stock")}
+                                                            className=" btn btn-circle  text-2xl border-primary-color">
+
+
+                                                            <CiHeart /></span>
                                                 </div>
                                           </div>
                                     </div>

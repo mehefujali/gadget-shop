@@ -63,25 +63,21 @@ const Nav = () => {
                                           <div className="dropdown dropdown-end">
                                                 <div tabIndex={0} role="button" className="btn btn-ghost btn-circle">
                                                       <div className="indicator bg-white p-2 rounded-full">
-                                                            <MdOutlineShoppingCart className="text-2xl" />
-                                                            <span className="badge badge-sm indicator-item">{localCart.length}</span>
+                                                            <Link to='/dashboard/cart'><MdOutlineShoppingCart className="text-2xl" /></Link>
+                                                            <span className="badge badge-sm indicator-item text-primary-color">{localCart.length}</span>
                                                       </div>
                                                 </div>
-                                                <div
-                                                      tabIndex={0}
-                                                      className="card card-compact dropdown-content bg-base-100 z-[1] mt-3 w-52 shadow">
-                                                      <div className="card-body">
-                                                            <span className="text-lg font-bold">{localCart.length} Items</span>
 
-                                                            <div className="card-actions">
-                                                                  <Link to='dashboard/cart' className=" w-full">
-                                                                        <button className="btn bg-primary-color text-white btn-block">View cart</button>
-                                                                  </Link>
-                                                            </div>
+                                          </div>
+                                          <div className="dropdown dropdown-end">
+                                                <div tabIndex={0} role="button" className="btn btn-ghost btn-circle">
+                                                      <div className="indicator bg-white p-2 rounded-full">
+                                                            <Link to='/dashboard/wishlist'><CiHeart className="text-2xl" /></Link>
+                                                            <span className="badge badge-sm indicator-item text-primary-color">{localCart.length}</span>
                                                       </div>
                                                 </div>
+
                                           </div>
-                                          <span className="bg-white p-2 rounded-full cursor-pointer border border-gray-200"><CiHeart className="text-2xl" /></span>
                                     </div>
                               </div>
                         </div>
