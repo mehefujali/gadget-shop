@@ -4,7 +4,6 @@ import './index.css'
 import {
   createBrowserRouter,
   Navigate,
-  replace,
   RouterProvider,
 } from "react-router-dom";
 import Root from './components/Root/Root';
@@ -16,6 +15,7 @@ import ProductDetails from './components/ProductDetails/ProductDetails';
 import Cart from './components/Cart/Cart';
 import WishList from './components/WishList/WishList';
 import { CreateCartContextPov } from './components/Context/CreateCartContextPov';
+import { CreateWishListContextPovider } from './components/Context/CreateWishListContextPovider';
 
 
 
@@ -81,8 +81,10 @@ const router = createBrowserRouter([
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <CreateCartContextPov>
-      <RouterProvider router={router} />
-    </CreateCartContextPov>
+    <CreateWishListContextPovider>
+      <CreateCartContextPov>
+        <RouterProvider router={router} />
+      </CreateCartContextPov>
+    </CreateWishListContextPovider>
   </StrictMode>,
 )
