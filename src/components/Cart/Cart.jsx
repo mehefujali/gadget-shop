@@ -4,7 +4,9 @@ import { getDataFromLocal } from "../../utility/localstorage";
 import CartCard from "../CartCard/CartCard";
 import { CartContext } from "../Context/CreateCartContextPov";
 import chackImg from '../../assets/images/Group.png'
+import './cart.css'
 const Cart = () => {
+      const { setCart } = useContext(CartContext)
       const [cartProductsId, setCartsProductId] = useState([])
       const [products, setProducts] = useState([])
       const [short, setShort] = useState(false)
@@ -25,6 +27,11 @@ const Cart = () => {
             document.getElementById('my_modal_1').showModal()
 
 
+
+      }
+      const closeModal = () => {
+            localStorage.removeItem('cart')
+            setCart(0)
       }
 
       return (
@@ -38,9 +45,10 @@ const Cart = () => {
                                     <button className="   font-bold flex items-center btn px-4 rounded-full btn-outline border-primary-color btn-sm md:btn-md  text-primary-color"
                                           onClick={() => setShort(true)}
                                     >Sort by Price <HiOutlineAdjustmentsVertical className="text-xl" /></button>
-                                    <button
+                                    <button disabled={filterCartProduct.length < 1}
                                           onClick={handleBuyProduct}
-                                          className=" w-full sm:w-fit btn-sm md:btn-md btn bg-gradient-to-b from-primary-color to-violet-600 rounded-full text-white px-4">Purchase</button>
+                                          id="purchaseBtn"
+                                          className="  w-full sm:w-fit btn-sm md:btn-md btn bg-primary-color   rounded-full text-white px-4">Purchase</button>
                               </div>
                         </div>
                         <div className=" flex flex-col gap-4 mt-10 min-h-[20vh] border-2 rounded-2xl p-5">
@@ -66,7 +74,7 @@ const Cart = () => {
                               <div className="modal-action">
                                     <form method="dialog" className=" w-full flex  justify-center">
                                           {/* if there is a button in form, it will close the modal */}
-                                          <button className="btn w-2/4 mx-auto text-lg btn-md">Close</button>
+                                          <button className="btn w-2/4 mx-auto text-lg btn-md" onClick={closeModal}>Close</button>
                                     </form>
                               </div>
                         </div>
