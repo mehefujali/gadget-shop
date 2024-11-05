@@ -17,6 +17,7 @@ import WishList from './components/WishList/WishList';
 import { CreateCartContextPov } from './components/Context/CreateCartContextPov';
 import { CreateWishListContextPovider } from './components/Context/CreateWishListContextPovider';
 import AboutUs from './components/AboutUs/AboutUs';
+import Statistics from './components/Statistics/Statistics';
 
 
 
@@ -48,7 +49,7 @@ const router = createBrowserRouter([
       },
       {
         path: '/statistics',
-        element: <h1>ok</h1>
+        element: <Statistics></Statistics>
       }
       ,
       {

@@ -6,6 +6,7 @@ import { toast } from "react-toastify";
 import { useContext } from "react";
 import { CartContext } from "../Context/CreateCartContextPov";
 import { WishListContext } from "../Context/CreateWishListContextPovider";
+import useDocumentTitle from "../../utility/useDocumentTitle";
 const ProductDetails = () => {
       const { productId } = useParams()
       const products = useLoaderData()
@@ -26,6 +27,7 @@ const ProductDetails = () => {
             setWishlist(productId)
 
       }
+      useDocumentTitle(`Product Details | ${product_title}`)
 
 
       return (

@@ -5,12 +5,14 @@ import CartCard from "../CartCard/CartCard";
 import { CartContext } from "../Context/CreateCartContextPov";
 import chackImg from '../../assets/images/Group.png'
 import './cart.css'
+import { useNavigate } from "react-router-dom";
 const Cart = () => {
       const { setCart } = useContext(CartContext)
       const [cartProductsId, setCartsProductId] = useState([])
       const [products, setProducts] = useState([])
       const [short, setShort] = useState(false)
       const { cart } = useContext(CartContext)
+      const navigate = useNavigate()
       useEffect(() => {
             const cartsId = getDataFromLocal("cart")
             setCartsProductId(cartsId)
@@ -32,6 +34,9 @@ const Cart = () => {
       const closeModal = () => {
             localStorage.removeItem('cart')
             setCart(0)
+
+            navigate('/home')
+
       }
 
       return (

@@ -1,9 +1,11 @@
-import { NavLink, Outlet } from "react-router-dom";
+import { NavLink, Outlet, useLocation } from "react-router-dom";
 import './dashboard.css'
 
 import 'react-tabs/style/react-tabs.css';
+import useDocumentTitle from "../../utility/useDocumentTitle";
 const Dashboard = () => {
-
+      const { pathname } = useLocation()
+      useDocumentTitle(` ${pathname}`)
 
       return (
             <div>

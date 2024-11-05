@@ -1,5 +1,7 @@
+import useDocumentTitle from "../../utility/useDocumentTitle";
 
 const AboutUs = () => {
+      useDocumentTitle("about us")
       return (
             <div className=" container mx-auto">
                   <div className=" w-3/5 mx-auto text-center mt-14">

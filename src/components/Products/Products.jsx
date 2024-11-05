@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import Product from "../Product/Product";
+import useDocumentTitle from "../../utility/useDocumentTitle";
 
 
 const Products = () => {
@@ -20,6 +21,7 @@ const Products = () => {
                   setProducts(filterCategory)
             }
       }
+      useDocumentTitle(`Home | ${category}`)
       return (
             <div className=" p-6 ">
                   {
