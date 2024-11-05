@@ -10,9 +10,9 @@ const WishListCard = ({ product }) => {
       const { setWishlist } = useContext(WishListContext)
       const { setCart } = useContext(CartContext)
       const { product_title, product_image, price, product_id, description } = product
-      const handleAddCart = (product_id) => {
-            setDataToLocal("cart", product_id)
-            setCart(product_id)
+      const handleAddCart = (productId) => {
+            setDataToLocal("cart", productId.toString())
+            setCart(productId)
 
       }
       const handleRemoveWishList = (product_id) => {

@@ -16,6 +16,7 @@ import Cart from './components/Cart/Cart';
 import WishList from './components/WishList/WishList';
 import { CreateCartContextPov } from './components/Context/CreateCartContextPov';
 import { CreateWishListContextPovider } from './components/Context/CreateWishListContextPovider';
+import AboutUs from './components/AboutUs/AboutUs';
 
 
 
@@ -74,6 +75,10 @@ const router = createBrowserRouter([
         path: 'product/:productId',
         loader: () => fetch('/products.json'),
         element: <ProductDetails></ProductDetails>
+      },
+      {
+        path: '/aboutus',
+        element: <AboutUs></AboutUs>
       }
     ]
   },

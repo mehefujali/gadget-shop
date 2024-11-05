@@ -50,7 +50,7 @@ const Nav = () => {
                                                 <NavLink to='/home' >Home</NavLink>
                                                 <NavLink to='/statistics' >Statistics</NavLink>
                                                 <NavLink to='/dashboard'>Dashboard</NavLink>
-
+                                                <NavLink to='aboutus'>About us</NavLink>
 
                                           </ul>
                                     </div>
@@ -61,6 +61,7 @@ const Nav = () => {
                                           <NavLink to='/home'>Home</NavLink>
                                           <NavLink to='/statistics'>Statistics</NavLink>
                                           <NavLink to='dashboard'>Dashboard</NavLink>
+                                          <NavLink to='aboutus'>About us</NavLink>
 
 
                                     </ul>
