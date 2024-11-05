@@ -1,7 +1,15 @@
 import PropTypes from "prop-types";
 import { RxCrossCircled } from "react-icons/rx";
+import { setDataToLocal } from "../../utility/localstorage";
+import { useContext } from "react";
+import { CartContext } from "../Context/CreateCartContextPov";
 const WishListCard = ({ product }) => {
+      const { setCart } = useContext(CartContext)
       const { product_title, product_image, price, product_id, description } = product
+      const handleAddCart = (product_id) => {
+            setDataToLocal("cart", product_id)
+            setCart(product_id)
+      }
       return (
             <div>
                   <div className=" flex  justify-between items-center bg-white rounded-xl p-3" >
@@ -13,10 +21,18 @@ const WishListCard = ({ product }) => {
                                     <h1 className=" text-2xl font-bold">{product_title}</h1>
                                     <p className=" text-lg text-gray-500">{description}</p>
                                     <p className=" text-lg text-gray-500">Price :${price}</p>
+                                    <div>
+                                          <button
+                                                onClick={() => handleAddCart(product_id)}
+                                                className=" btn rounded-lg text-white bg-primary-color">Add to cart</button>
+                                    </div>
                               </div>
+
 
                         </div>
                         <div className=" text-3xl text-red-600  relative  -left-4 -top-16 cursor-pointer "><RxCrossCircled /></div>
+
+
                   </div>
             </div>
       );
