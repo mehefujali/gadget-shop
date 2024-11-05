@@ -1,7 +1,7 @@
 const getDataFromLocal = (key) => {
 
       const localData = localStorage.getItem(key)
-      console.log(localData);
+
 
       if (localData) {
             const dataPars = JSON.parse(localData)
