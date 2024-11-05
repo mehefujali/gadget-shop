@@ -7,6 +7,7 @@ import { CartContext } from "../Context/CreateCartContextPov";
 const Cart = () => {
       const [cartProductsId, setCartsProductId] = useState([])
       const [products, setProducts] = useState([])
+
       const { cart } = useContext(CartContext)
       useEffect(() => {
             const cartsId = getDataFromLocal("cart")
@@ -21,6 +22,15 @@ const Cart = () => {
 
       const filterCartProduct = products.filter(product => cartProductsId.includes(product.product_id.toString()))
 
+      // console.log(filterCartProduct)
+      const totalPrice = filterCartProduct.reduce((acc, curr) => acc + curr.price, 0)
+      console.log(totalPrice);
+
+
+
+
+
+
 
 
 
@@ -30,9 +40,9 @@ const Cart = () => {
                   <div className=" container mx-auto ">
                         {/* nav  */}
                         <div className=" flex justify-between items-center" >
-                              <h1 className=" text-2xl font-bold">cart</h1>
+                              <h1 className=" text-2xl font-bold">Cart</h1>
                               <div className=" flex flex-col sm:flex-row items-center gap-1 md:gap-4">
-                                    <h3 className=" text-md md:text-2xl font-bold">Toatal cost</h3>
+                                    <h3 className=" text-md md:text-2xl font-bold">Toatal cost : $ {totalPrice}</h3>
                                     <button className="   font-bold flex items-center btn px-4 rounded-full btn-outline border-primary-color btn-sm md:btn-md  text-primary-color">Sort by Price <HiOutlineAdjustmentsVertical className="text-xl" /></button>
                                     <button className=" w-full sm:w-fit btn-sm md:btn-md btn bg-gradient-to-b from-primary-color to-violet-600 rounded-full text-white px-4">Purchase</button>
                               </div>

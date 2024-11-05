@@ -30,7 +30,8 @@ const CartCard = ({ product }) => {
 };
 
 CartCard.propTypes = {
-      product: PropTypes.object.isRequired
+      product: PropTypes.object.isRequired,
+
 }
 
 export default CartCard;
