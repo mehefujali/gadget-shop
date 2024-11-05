@@ -30,6 +30,7 @@ const CartCard = ({ product }) => {
                         toast.warn("Product removed from cart")
                         handleRemoveCart(product_id)
                   }} className=" text-3xl text-red-600  relative  -left-4 -top-16 cursor-pointer "><RxCrossCircled /></div>
+
             </div>
       );
 };

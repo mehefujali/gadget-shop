@@ -3,7 +3,7 @@ import { HiOutlineAdjustmentsVertical } from "react-icons/hi2";
 import { getDataFromLocal } from "../../utility/localstorage";
 import CartCard from "../CartCard/CartCard";
 import { CartContext } from "../Context/CreateCartContextPov";
-
+import chackImg from '../../assets/images/Group.png'
 const Cart = () => {
       const [cartProductsId, setCartsProductId] = useState([])
       const [products, setProducts] = useState([])
@@ -21,6 +21,11 @@ const Cart = () => {
       const filterCartProduct = products.filter(product => cartProductsId.includes(product.product_id.toString()))
       const totalPrice = filterCartProduct.reduce((acc, curr) => acc + curr.price, 0)
       short && filterCartProduct.sort((a, b) => b.price - a.price);
+      const handleBuyProduct = () => {
+            document.getElementById('my_modal_1').showModal()
+
+
+      }
 
       return (
             <div>
@@ -33,7 +38,9 @@ const Cart = () => {
                                     <button className="   font-bold flex items-center btn px-4 rounded-full btn-outline border-primary-color btn-sm md:btn-md  text-primary-color"
                                           onClick={() => setShort(true)}
                                     >Sort by Price <HiOutlineAdjustmentsVertical className="text-xl" /></button>
-                                    <button className=" w-full sm:w-fit btn-sm md:btn-md btn bg-gradient-to-b from-primary-color to-violet-600 rounded-full text-white px-4">Purchase</button>
+                                    <button
+                                          onClick={handleBuyProduct}
+                                          className=" w-full sm:w-fit btn-sm md:btn-md btn bg-gradient-to-b from-primary-color to-violet-600 rounded-full text-white px-4">Purchase</button>
                               </div>
                         </div>
                         <div className=" flex flex-col gap-4 mt-10 min-h-[20vh] border-2 rounded-2xl p-5">
@@ -44,6 +51,26 @@ const Cart = () => {
                               }
                         </div>
                   </div>
+                  {/* Open the modal using document.getElementById('ID').showModal() method */}
+
+                  <dialog id="my_modal_1" className="modal">
+                        <div className="modal-box py-8">
+                              <div className=" flex flex-col text-center ">
+                                    <img className=" w-16 mx-auto" src={chackImg} alt="" />
+                                    <h3 className="font-bold text-2xl">Payment Successfully</h3>
+                                    <div className=" text-lg text-gray-600">
+                                          <p className="">Thanks for purchasing.</p>
+                                          <p className="">Total:$ {totalPrice}</p>
+                                    </div>
+                              </div>
+                              <div className="modal-action">
+                                    <form method="dialog" className=" w-full flex  justify-center">
+                                          {/* if there is a button in form, it will close the modal */}
+                                          <button className="btn w-2/4 mx-auto text-lg btn-md">Close</button>
+                                    </form>
+                              </div>
+                        </div>
+                  </dialog>
             </div>
       );
 };
