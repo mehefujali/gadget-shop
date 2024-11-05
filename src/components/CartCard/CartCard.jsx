@@ -1,5 +1,6 @@
 import PropTypes from "prop-types";
 import { RxCrossCircled } from "react-icons/rx";
+import { removeItemFromLocal } from "../../utility/localstorage";
 const CartCard = ({ product }) => {
       const { product_title, product_image, price, product_id, description } = product
       return (
@@ -15,7 +16,7 @@ const CartCard = ({ product }) => {
                         </div>
 
                   </div>
-                  <div className=" text-3xl text-red-600  relative  -left-4 -top-16 cursor-pointer "><RxCrossCircled /></div>
+                  <div onClick={() => removeItemFromLocal("cart", product_id)} className=" text-3xl text-red-600  relative  -left-4 -top-16 cursor-pointer "><RxCrossCircled /></div>
             </div>
       );
 };

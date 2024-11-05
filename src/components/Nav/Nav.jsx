@@ -4,6 +4,8 @@ import { CiHeart } from "react-icons/ci";
 import { FaBars } from "react-icons/fa";
 import './nav.css'
 
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const Nav = () => {
       const { pathname } = useLocation()
@@ -12,6 +14,12 @@ const Nav = () => {
 
       return (
             <div className=" lg:pt-6">
+                  <ToastContainer
+                        hideProgressBar
+                        position="top-center"
+                        theme="colored"
+                        autoClose="800"
+                  />
                   <nav className={`${pathname.includes('/home') ? ' bg-primary-color navLinksWhite ' : 'bg-transparent text-black'}  py-3  lg:mx-6`} id="navBar">
                         <div className="navbar container mx-auto ">
                               <div className="navbar-start">
