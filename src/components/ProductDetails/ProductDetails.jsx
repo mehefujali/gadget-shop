@@ -5,10 +5,12 @@ import { getDataFromLocal, setDataToLocal } from "../../utility/localstorage";
 import { toast } from "react-toastify";
 import { useContext } from "react";
 import { CartContext } from "../Context/CreateCartContextPov";
+import { WishListContext } from "../Context/CreateWishListContextPovider";
 const ProductDetails = () => {
       const { productId } = useParams()
       const products = useLoaderData()
       const { setCart } = useContext(CartContext)
+      const { setWishlist } = useContext(WishListContext)
 
       const product = products.find(product => product.product_id === parseInt(productId))
       const { product_title, product_image, price, availability, description, specification, rating } = product
@@ -21,6 +23,7 @@ const ProductDetails = () => {
       }
       const handleAddWishlist = (productId) => {
             setDataToLocal("wishlist", productId)
+            setWishlist(productId)
 
       }
 

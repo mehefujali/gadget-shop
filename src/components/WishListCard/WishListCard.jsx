@@ -1,14 +1,22 @@
 import PropTypes from "prop-types";
 import { RxCrossCircled } from "react-icons/rx";
-import { setDataToLocal } from "../../utility/localstorage";
+import { removeItemFromLocal, setDataToLocal } from "../../utility/localstorage";
 import { useContext } from "react";
 import { CartContext } from "../Context/CreateCartContextPov";
+import { WishListContext } from "../Context/CreateWishListContextPovider";
+
 const WishListCard = ({ product }) => {
+      const { setWishlist } = useContext(WishListContext)
       const { setCart } = useContext(CartContext)
       const { product_title, product_image, price, product_id, description } = product
       const handleAddCart = (product_id) => {
             setDataToLocal("cart", product_id)
             setCart(product_id)
+
+      }
+      const handleRemoveWishList = (product_id) => {
+            removeItemFromLocal("wishlist", product_id)
+            setWishlist(product_id)
       }
       return (
             <div>
@@ -30,7 +38,9 @@ const WishListCard = ({ product }) => {
 
 
                         </div>
-                        <div className=" text-3xl text-red-600  relative  -left-4 -top-16 cursor-pointer "><RxCrossCircled /></div>
+                        <div
+                              onClick={() => handleRemoveWishList(product_id)}
+                              className=" text-3xl text-red-600  relative  -left-4 -top-16 cursor-pointer "><RxCrossCircled /></div>
 
 
                   </div>

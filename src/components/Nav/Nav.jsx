@@ -9,16 +9,23 @@ import 'react-toastify/dist/ReactToastify.css';
 import { useContext, useEffect, useState } from "react";
 import { CartContext } from "../Context/CreateCartContextPov";
 import { getDataFromLocal } from "../../utility/localstorage";
+import { WishListContext } from "../Context/CreateWishListContextPovider";
 
 const Nav = () => {
       const { pathname } = useLocation()
       const { cart } = useContext(CartContext)
-
+      const { wishList } = useContext(WishListContext)
       const [localCart, setLoclaCart] = useState([])
+      const [localWishList, setLocalWishlist] = useState([])
       useEffect(() => {
             const lcoalData = getDataFromLocal("cart")
             setLoclaCart(lcoalData)
       }, [cart])
+      useEffect(() => {
+            const localData = getDataFromLocal("wishlist")
+            setLocalWishlist(localData)
+      }, [wishList])
+
 
 
 
@@ -73,7 +80,7 @@ const Nav = () => {
                                                 <div tabIndex={0} role="button" className="btn btn-ghost btn-circle">
                                                       <div className="indicator bg-white p-2 rounded-full">
                                                             <Link to='/dashboard/wishlist'><CiHeart className="text-2xl" /></Link>
-                                                            <span className="badge badge-sm indicator-item text-primary-color">{localCart.length}</span>
+                                                            <span className="badge badge-sm indicator-item text-primary-color">{localWishList.length}</span>
                                                       </div>
                                                 </div>
 
