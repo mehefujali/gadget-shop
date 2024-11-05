@@ -15,6 +15,7 @@ import Error from './components/Error/Error';
 import ProductDetails from './components/ProductDetails/ProductDetails';
 import Cart from './components/Cart/Cart';
 import WishList from './components/WishList/WishList';
+import { CreateCartContextPov } from './components/Context/CreateCartContextPov';
 
 
 
@@ -80,6 +81,8 @@ const router = createBrowserRouter([
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <RouterProvider router={router} />
+    <CreateCartContextPov>
+      <RouterProvider router={router} />
+    </CreateCartContextPov>
   </StrictMode>,
 )

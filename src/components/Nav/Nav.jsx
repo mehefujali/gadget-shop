@@ -6,9 +6,19 @@ import './nav.css'
 
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import { useContext, useEffect, useState } from "react";
+import { CartContext } from "../Context/CreateCartContextPov";
+import { getDataFromLocal } from "../../utility/localstorage";
 
 const Nav = () => {
       const { pathname } = useLocation()
+      const { cart } = useContext(CartContext)
+
+      const [localCart, setLoclaCart] = useState([])
+      useEffect(() => {
+            const lcoalData = getDataFromLocal("cart")
+            setLoclaCart(lcoalData)
+      }, [cart])
 
 
 
@@ -54,17 +64,19 @@ const Nav = () => {
                                                 <div tabIndex={0} role="button" className="btn btn-ghost btn-circle">
                                                       <div className="indicator bg-white p-2 rounded-full">
                                                             <MdOutlineShoppingCart className="text-2xl" />
-                                                            <span className="badge badge-sm indicator-item">8</span>
+                                                            <span className="badge badge-sm indicator-item">{localCart.length}</span>
                                                       </div>
                                                 </div>
                                                 <div
                                                       tabIndex={0}
                                                       className="card card-compact dropdown-content bg-base-100 z-[1] mt-3 w-52 shadow">
                                                       <div className="card-body">
-                                                            <span className="text-lg font-bold">8 Items</span>
-                                                            <span className="text-info">Subtotal: $999</span>
+                                                            <span className="text-lg font-bold">{localCart.length} Items</span>
+
                                                             <div className="card-actions">
-                                                                  <button className="btn btn-primary btn-block">View cart</button>
+                                                                  <Link to='dashboard/cart' className=" w-full">
+                                                                        <button className="btn bg-primary-color text-white btn-block">View cart</button>
+                                                                  </Link>
                                                             </div>
                                                       </div>
                                                 </div>

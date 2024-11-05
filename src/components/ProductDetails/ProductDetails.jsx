@@ -1,16 +1,24 @@
 import { ScrollRestoration, useLoaderData, useParams } from "react-router-dom";
 import { IoCartOutline } from "react-icons/io5";
 import { CiHeart } from "react-icons/ci";
-import { setDataToLocal } from "../../utility/localstorage";
+import { getDataFromLocal, setDataToLocal } from "../../utility/localstorage";
 import { toast } from "react-toastify";
+import { useContext } from "react";
+import { CartContext } from "../Context/CreateCartContextPov";
 const ProductDetails = () => {
       const { productId } = useParams()
       const products = useLoaderData()
+      const { setCart } = useContext(CartContext)
 
       const product = products.find(product => product.product_id === parseInt(productId))
       const { product_title, product_image, price, availability, description, specification, rating } = product
 
-      console.log(product);
+
+      const handleAddCart = (productId) => {
+            setDataToLocal("cart", productId)
+            const cartsData = getDataFromLocal("cart")
+            setCart(cartsData)
+      }
 
 
       return (
@@ -44,7 +52,7 @@ const ProductDetails = () => {
                                                 </div>
                                                 <div className=" flex gap-4">
                                                       <button
-                                                            onClick={() => availability ? setDataToLocal("cart", productId) : toast.error("Product out of stock")}
+                                                            onClick={() => availability ? handleAddCart(productId) : toast.error("Product out of stock")}
                                                             className=" btn flex items-center gap-2 bg-primary-color text-white">Add to cart <IoCartOutline className="text-xl" /></button>
                                                       <span className=" btn btn-circle  text-2xl border-primary-color"><CiHeart /></span>
                                                 </div>
