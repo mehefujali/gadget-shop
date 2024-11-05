@@ -4,6 +4,7 @@ import './index.css'
 import {
   createBrowserRouter,
   Navigate,
+  replace,
   RouterProvider,
 } from "react-router-dom";
 import Root from './components/Root/Root';
@@ -12,6 +13,8 @@ import Dashboard from './components/Dashboard/Dashboard';
 import Products from './components/Products/Products';
 import Error from './components/Error/Error';
 import ProductDetails from './components/ProductDetails/ProductDetails';
+import Cart from './components/Cart/Cart';
+import WishList from './components/WishList/WishList';
 
 
 
@@ -48,8 +51,24 @@ const router = createBrowserRouter([
       ,
       {
         path: '/dashboard',
-        element: <Dashboard></Dashboard>
-      },
+        element: <Dashboard></Dashboard>,
+        children: [
+          {
+            path: '/dashboard',
+            element: <Navigate to="cart" replace ></Navigate>
+          },
+
+          {
+            path: 'cart',
+            element: <Cart></Cart>
+          },
+          {
+            path: 'wishlist',
+            element: <WishList></WishList>
+          }
+        ]
+      }
+      ,
       {
         path: 'product/:productId',
         loader: () => fetch('/products.json'),

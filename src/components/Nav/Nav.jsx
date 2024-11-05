@@ -4,8 +4,10 @@ import { CiHeart } from "react-icons/ci";
 import { FaBars } from "react-icons/fa";
 import './nav.css'
 
+
 const Nav = () => {
       const { pathname } = useLocation()
+
 
 
       return (
@@ -19,9 +21,9 @@ const Nav = () => {
                                           </div>
                                           <ul
                                                 tabIndex={0}
-                                                className={`menu menu-sm dropdown-content bg-primary-color bg-opacity-5 shadow-md border backdrop-blur-3xl ${pathname === '/home' ? 'text-white' : 'text-black'}  rounded-box z-[1] mt-3 w-52 p-2  `} id="dropNav">
-                                                <NavLink to='/home'>Home</NavLink>
-                                                <NavLink to='/statistics'>Statistics</NavLink>
+                                                className={`menu menu-sm dropdown-content bg-primary-color bg-opacity-5 shadow-md border backdrop-blur-3xl ${pathname.includes('/home') ? 'text-gray-300' : 'text-black'}  tr rounded-box z-[1] mt-3 w-52 p-2  `} id="dropNav">
+                                                <NavLink to='/home' >Home</NavLink>
+                                                <NavLink to='/statistics' >Statistics</NavLink>
                                                 <NavLink to='/dashboard'>Dashboard</NavLink>
 
 
@@ -30,18 +32,36 @@ const Nav = () => {
                                     <Link to='/' className=" text-md sm:text-xl font-bold ">Gadget Shop</Link>
                               </div>
                               <div className="navbar-center hidden lg:flex">
-                                    <ul className={`menu menu-horizontal px-1 gap-8`} id="navLinks">
+                                    <ul className={`menu menu-horizontal px-1 gap-8  `} id="navLinks">
                                           <NavLink to='/home'>Home</NavLink>
                                           <NavLink to='/statistics'>Statistics</NavLink>
-                                          <NavLink to='/dashboard'>Dashboard</NavLink>
+                                          <NavLink to='dashboard'>Dashboard</NavLink>
 
 
                                     </ul>
                               </div>
                               <div className="navbar-end">
-                                    <div className=" text-2xl font-semibold flex items-center gap-3  text-black">
-                                          <span className="bg-white p-2 rounded-full cursor-pointer border border-gray-200"><MdOutlineShoppingCart /></span>
-                                          <span className="bg-white p-2 rounded-full cursor-pointer border border-gray-200"><CiHeart /></span>
+                                    <div className="  font-semibold flex items-center gap-3   text-black">
+                                          <div className="dropdown dropdown-end">
+                                                <div tabIndex={0} role="button" className="btn btn-ghost btn-circle">
+                                                      <div className="indicator bg-white p-2 rounded-full">
+                                                            <MdOutlineShoppingCart className="text-2xl" />
+                                                            <span className="badge badge-sm indicator-item">8</span>
+                                                      </div>
+                                                </div>
+                                                <div
+                                                      tabIndex={0}
+                                                      className="card card-compact dropdown-content bg-base-100 z-[1] mt-3 w-52 shadow">
+                                                      <div className="card-body">
+                                                            <span className="text-lg font-bold">8 Items</span>
+                                                            <span className="text-info">Subtotal: $999</span>
+                                                            <div className="card-actions">
+                                                                  <button className="btn btn-primary btn-block">View cart</button>
+                                                            </div>
+                                                      </div>
+                                                </div>
+                                          </div>
+                                          <span className="bg-white p-2 rounded-full cursor-pointer border border-gray-200"><CiHeart className="text-2xl" /></span>
                                     </div>
                               </div>
                         </div>

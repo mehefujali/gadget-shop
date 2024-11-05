@@ -12,7 +12,7 @@ const MainContainer = () => {
                         <div className=" lg:min-h-96 h-fit w-full col-span-12 lg:col-span-3 xl:col-span-2" >
                               <Categories></Categories>
                         </div>
-                        <div className=" border-2 rounded-xl min-h-96 col-span-12 lg:col-span-9 xl:col-span-10">
+                        <div className=" border-2  border-white bg-white bg-opacity-30 rounded-xl min-h-96 col-span-12 lg:col-span-9 xl:col-span-10">
                               <Outlet></Outlet>
                         </div>
                   </div>
