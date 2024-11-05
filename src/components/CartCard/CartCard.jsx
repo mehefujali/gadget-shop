@@ -3,6 +3,7 @@ import { RxCrossCircled } from "react-icons/rx";
 import { getDataFromLocal, removeItemFromLocal } from "../../utility/localstorage";
 import { useContext } from "react";
 import { CartContext } from "../Context/CreateCartContextPov";
+import { toast } from "react-toastify";
 const CartCard = ({ product }) => {
       const { setCart } = useContext(CartContext)
       const handleRemoveCart = id => {
@@ -10,6 +11,7 @@ const CartCard = ({ product }) => {
             const newData = getDataFromLocal("cart")
             setCart(newData)
       }
+
       const { product_title, product_image, price, product_id, description } = product
       return (
             <div className=" flex  justify-between items-center bg-white rounded-xl p-3" >
@@ -24,7 +26,10 @@ const CartCard = ({ product }) => {
                         </div>
 
                   </div>
-                  <div onClick={() => handleRemoveCart(product_id)} className=" text-3xl text-red-600  relative  -left-4 -top-16 cursor-pointer "><RxCrossCircled /></div>
+                  <div onClick={() => {
+                        toast.warn("Product removed from cart")
+                        handleRemoveCart(product_id)
+                  }} className=" text-3xl text-red-600  relative  -left-4 -top-16 cursor-pointer "><RxCrossCircled /></div>
             </div>
       );
 };

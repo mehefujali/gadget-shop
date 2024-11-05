@@ -4,6 +4,7 @@ import { removeItemFromLocal, setDataToLocal } from "../../utility/localstorage"
 import { useContext } from "react";
 import { CartContext } from "../Context/CreateCartContextPov";
 import { WishListContext } from "../Context/CreateWishListContextPovider";
+import { toast } from "react-toastify";
 
 const WishListCard = ({ product }) => {
       const { setWishlist } = useContext(WishListContext)
@@ -39,7 +40,10 @@ const WishListCard = ({ product }) => {
 
                         </div>
                         <div
-                              onClick={() => handleRemoveWishList(product_id)}
+                              onClick={() => {
+                                    toast.warn("Product removed from Wishlist")
+                                    handleRemoveWishList(product_id)
+                              }}
                               className=" text-3xl text-red-600  relative  -left-4 -top-16 cursor-pointer "><RxCrossCircled /></div>
 
 

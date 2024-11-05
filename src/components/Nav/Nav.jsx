@@ -35,7 +35,7 @@ const Nav = () => {
                         hideProgressBar
                         position="top-center"
                         theme="colored"
-                        autoClose="800"
+                        autoClose="700"
                   />
                   <nav className={`${pathname.includes('/home') ? ' bg-primary-color navLinksWhite ' : 'bg-transparent text-black'}  py-3  lg:mx-6`} id="navBar">
                         <div className="navbar container mx-auto ">
