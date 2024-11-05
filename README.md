@@ -7,7 +7,7 @@ Welcome to **Gadget Shop**! This web application is designed to offer users a se
 https://gadget-shop-k.netlify.app
 
 ## Requirement Document
-https://easyupload.io/m0y7tv
+https://drive.google.com/file/d/1vB9TC4_iCBfaez3v1koAhCBL_x8KMC8A/view?usp=sharing
 
 
 ## Project Overview
