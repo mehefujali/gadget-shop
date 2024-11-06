@@ -11,7 +11,7 @@ const Products = () => {
             fetch('/products.json')
                   .then(res => res.json())
                   .then(data => handleFilterProduct(data))
-      }, [products])
+      }, [category])
       const handleFilterProduct = (data) => {
             if (category === 'all-products') {
                   setProducts(data)

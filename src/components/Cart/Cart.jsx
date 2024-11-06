@@ -6,13 +6,16 @@ import { CartContext } from "../Context/CreateCartContextPov";
 import chackImg from '../../assets/images/Group.png'
 import './cart.css'
 import { useNavigate } from "react-router-dom";
+import useDocumentTitle from "../../utility/useDocumentTitle";
 const Cart = () => {
+
       const { setCart } = useContext(CartContext)
       const [cartProductsId, setCartsProductId] = useState([])
       const [products, setProducts] = useState([])
       const [short, setShort] = useState(false)
       const { cart } = useContext(CartContext)
       const navigate = useNavigate()
+      useDocumentTitle("Dashboard|Cart")
       useEffect(() => {
             const cartsId = getDataFromLocal("cart")
             setCartsProductId(cartsId)
@@ -39,6 +42,7 @@ const Cart = () => {
 
       }
 
+
       return (
             <div>
                   <div className=" container mx-auto ">
@@ -64,7 +68,7 @@ const Cart = () => {
                               }
                         </div>
                   </div>
-                  {/* Open the modal using document.getElementById('ID').showModal() method */}
+
 
                   <dialog id="my_modal_1" className="modal">
                         <div className="modal-box py-8">
@@ -78,7 +82,7 @@ const Cart = () => {
                               </div>
                               <div className="modal-action">
                                     <form method="dialog" className=" w-full flex  justify-center">
-                                          {/* if there is a button in form, it will close the modal */}
+
                                           <button className="btn w-2/4 mx-auto text-lg btn-md" onClick={closeModal}>Close</button>
                                     </form>
                               </div>

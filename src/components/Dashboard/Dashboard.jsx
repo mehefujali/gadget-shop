@@ -4,6 +4,7 @@ import './dashboard.css'
 import 'react-tabs/style/react-tabs.css';
 import useDocumentTitle from "../../utility/useDocumentTitle";
 const Dashboard = () => {
+
       const { pathname } = useLocation()
       useDocumentTitle(` ${pathname}`)
 

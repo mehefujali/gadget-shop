@@ -2,12 +2,14 @@ import { useContext, useEffect, useState } from "react";
 import { getDataFromLocal } from "../../utility/localstorage";
 import WishListCard from "../WishListCard/WishListCard";
 import { WishListContext } from "../Context/CreateWishListContextPovider";
+import useDocumentTitle from "../../utility/useDocumentTitle";
 
 
 const WishList = () => {
       const [wishListProductId, setWishListProductId] = useState([])
       const [products, setProducts] = useState([])
       const { wishList } = useContext(WishListContext)
+      useDocumentTitle("Dashboard|wishlist")
       useEffect(() => {
             fetch("/products.json")
                   .then(res => res.json())
