@@ -3,11 +3,12 @@ import { IoCartOutline } from "react-icons/io5";
 import { CiHeart } from "react-icons/ci";
 import { getDataFromLocal, setDataToLocal } from "../../utility/localstorage";
 import { toast } from "react-toastify";
-import { useContext } from "react";
+import { useContext, useState } from "react";
 import { CartContext } from "../Context/CreateCartContextPov";
 import { WishListContext } from "../Context/CreateWishListContextPovider";
 import useDocumentTitle from "../../utility/useDocumentTitle";
 const ProductDetails = () => {
+      const [isdiseble, setdiseble] = useState(false)
       const { productId } = useParams()
       const products = useLoaderData()
       const { setCart } = useContext(CartContext)
@@ -25,6 +26,7 @@ const ProductDetails = () => {
       const handleAddWishlist = (productId) => {
             setDataToLocal("wishlist", productId)
             setWishlist(productId)
+            setdiseble(true)
 
       }
       useDocumentTitle(`Product Details | ${product_title}`)
@@ -66,12 +68,12 @@ const ProductDetails = () => {
                                                       </button>
 
 
-                                                      <span
+                                                      <button disabled={isdiseble}
                                                             onClick={() => availability ? handleAddWishlist(productId) : toast.error("Product out of stock")}
                                                             className=" btn btn-circle  text-2xl border-primary-color">
 
 
-                                                            <CiHeart /></span>
+                                                            <CiHeart /></button>
                                                 </div>
                                           </div>
                                     </div>
