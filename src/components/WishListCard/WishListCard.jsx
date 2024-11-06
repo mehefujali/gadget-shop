@@ -13,6 +13,7 @@ const WishListCard = ({ product }) => {
       const handleAddCart = (productId) => {
             setDataToLocal("cart", productId.toString())
             setCart(productId)
+            handleRemoveWishList(productId)
 
       }
       const handleRemoveWishList = (product_id) => {
