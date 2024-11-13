@@ -1,0 +1,264 @@
+[
+      {
+            "product_id": 603,
+            "product_title": "Tablet Pro Max",
+            "product_image": "https://i.ibb.co/KV5jNhw/image.png",
+            "category": "tablets",
+            "price": 500,
+            "description": "High-performance tablet with stunning visuals.",
+            "specification": [
+                  "12.9 inch Retina Display",
+                  "6GB RAM",
+                  "256GB Storage"
+            ],
+            "availability": true,
+            "rating": 4.7
+      },
+      {
+            "product_id": 205,
+            "product_title": "Apple iPhone 16",
+            "product_image": "https://i.ibb.co/pd8Ssp5/image.png",
+            "category": "phones",
+            "price": 999,
+            "description": "Apple's newest iPhone with enhanced performance and improved battery life.",
+            "specification": [
+                  "A18 Bionic Chip",
+                  "8GB RAM",
+                  "128GB Storage",
+                  "48MP Dual Camera System"
+            ],
+            "availability": false,
+            "rating": 4.7
+      },
+      {
+            "product_id": 201,
+            "product_title": "Phone A12",
+            "product_image": "https://i.ibb.co/cxbvG3Z/image.png",
+            "category": "phones",
+            "price": 600,
+            "description": "A sleek smartphone with powerful features.",
+            "specification": [
+                  "Snapdragon 870 Processor",
+                  "8GB RAM",
+                  "128GB Storage",
+                  "48MP Camera"
+            ],
+            "availability": true,
+            "rating": 4.2
+      },
+      {
+            "product_id": 202,
+            "product_title": "Phone B23",
+            "product_image": "https://i.ibb.co/M18Dsvv/image.png",
+            "category": "phones",
+            "price": 750,
+            "description": "A premium phone with a stunning display.",
+            "specification": [
+                  "Exynos 990 Processor",
+                  "12GB RAM",
+                  "256GB Storage",
+                  "5000mAh Battery"
+            ],
+            "availability": true,
+            "rating": 4.8
+      },
+      {
+            "product_id": 301,
+            "product_title": "Smart Watch X",
+            "product_image": "https://i.ibb.co/fFLpMXY/image.png",
+            "category": "smart-watches",
+            "price": 200,
+            "description": "Stylish and versatile smartwatch with health tracking.",
+            "specification": [
+                  "1.6 inch OLED Display",
+                  "Heart Rate Monitor",
+                  "Water Resistant"
+            ],
+            "availability": true,
+            "rating": 4.3
+      },
+      {
+            "product_id": 204,
+            "product_title": "Samsung Galaxy S24",
+            "product_image": "https://i.ibb.co/94vG8vq/image.png",
+            "category": "phones",
+            "price": 799,
+            "description": "The latest flagship from Samsung featuring a stunning display and advanced camera capabilities.",
+            "specification": [
+                  "Snapdragon 8 Gen 3 Processor",
+                  "12GB RAM",
+                  "256GB Storage",
+                  "50MP Triple Camera System"
+            ],
+            "availability": true,
+            "rating": 4.5
+      },
+      {
+            "product_id": 303,
+            "product_title": "Luxury Smart Watch",
+            "product_image": "https://i.ibb.co/Fx8Hy73/image.png",
+            "category": "smart-watches",
+            "price": 300,
+            "description": "Premium smart watch with a luxurious design.",
+            "specification": [
+                  "1.8 inch AMOLED Display",
+                  "Built-in GPS",
+                  "Water Resistant"
+            ],
+            "availability": false,
+            "rating": 4.4
+      },
+      {
+            "product_id": 206,
+            "product_title": "Google Pixel 9",
+            "product_image": "https://i.ibb.co/vs50XSN/image.png",
+            "category": "phones",
+            "price": 699,
+            "description": "Google's latest smartphone offering seamless integration with Android 14.",
+            "specification": [
+                  "Tensor G3 Processor",
+                  "8GB RAM",
+                  "128GB Storage",
+                  "50MP Dual Camera System"
+            ],
+            "availability": true,
+            "rating": 4.6
+      },
+      {
+            "product_id": 207,
+            "product_title": "OnePlus 12",
+            "product_image": "https://i.ibb.co/sFbnYC1/image.png",
+            "category": "phones",
+            "price": 749,
+            "description": "A high-performance smartphone with a sleek design and fast charging capabilities.",
+            "specification": [
+                  "Snapdragon 8 Gen 3 Processor",
+                  "12GB RAM",
+                  "256GB Storage",
+                  "50MP Triple Camera System"
+            ],
+            "availability": true,
+            "rating": 4.4
+      },
+      {
+            "product_id": 208,
+            "product_title": "Xiaomi Mi 14",
+            "product_image": "https://i.ibb.co/qyZnhXJ/image.png",
+            "category": "phones",
+            "price": 699,
+            "description": "A feature-packed smartphone offering great value for money.",
+            "specification": [
+                  "Snapdragon 8 Gen 3 Processor",
+                  "8GB RAM",
+                  "128GB Storage",
+                  "50MP Quad Camera System"
+            ],
+            "availability": true,
+            "rating": 4.3
+      },
+      {
+            "product_id": 401,
+            "product_title": "Fast Charger Pro",
+            "product_image": "https://i.ibb.co/c8VsHmf/image.png",
+            "category": "chargers",
+            "price": 55,
+            "description": "Fast and efficient charger for multiple devices.",
+            "specification": [
+                  "18W Fast Charging",
+                  "USB-C Port",
+                  "Compact Design"
+            ],
+            "availability": true,
+            "rating": 4.7
+      },
+      {
+            "product_id": 402,
+            "product_title": "Wireless Charger Pad",
+            "product_image": "https://i.ibb.co/PF3c66T/image.png",
+            "category": "chargers",
+            "price": 80,
+            "description": "Convenient wireless charging pad for smartphones.",
+            "specification": [
+                  "Qi Wireless Charging",
+                  "10W Fast Charging",
+                  "Slim Design"
+            ],
+            "availability": true,
+            "rating": 4.5
+      },
+      {
+            "product_id": 501,
+            "product_title": "Power Bank Max",
+            "product_image": "https://i.ibb.co/zQ2vq78/image.png",
+            "category": "power-banks",
+            "price": 55,
+            "description": "High-capacity power bank for all-day charging.",
+            "specification": [
+                  "20000mAh Capacity",
+                  "Dual USB Ports",
+                  "Fast Charging Support"
+            ],
+            "availability": true,
+            "rating": 4.6
+      },
+      {
+            "product_id": 502,
+            "product_title": "Mini Power Bank",
+            "product_image": "https://i.ibb.co/VJ85g0p/image.png",
+            "category": "power-banks",
+            "price": 70,
+            "description": "Compact power bank for quick recharges on the go.",
+            "specification": [
+                  "10000mAh Capacity",
+                  "Single USB Port",
+                  "Lightweight Design"
+            ],
+            "availability": true,
+            "rating": 4.0
+      },
+      {
+            "product_id": 503,
+            "product_title": "Solar Power Bank",
+            "product_image": "https://i.ibb.co/D4C48Ys/image.png",
+            "category": "power-banks",
+            "price": 60,
+            "description": "Eco-friendly power bank with solar charging capabilities.",
+            "specification": [
+                  "15000mAh Capacity",
+                  "Dual USB Ports",
+                  "Solar Panel"
+            ],
+            "availability": true,
+            "rating": 4.3
+      },
+      {
+            "product_id": 601,
+            "product_title": "Tablet Z10",
+            "product_image": "https://i.ibb.co/nCcWW9T/image.png",
+            "category": "tablets",
+            "price": 350,
+            "description": "A versatile tablet for work and entertainment.",
+            "specification": [
+                  "10.5 inch Full HD Display",
+                  "4GB RAM",
+                  "64GB Storage"
+            ],
+            "availability": false,
+            "rating": 4.1
+      },
+      {
+            "product_id": 602,
+            "product_title": "Tablet Mini 8",
+            "product_image": "https://i.ibb.co/yPBdXrD/image.png",
+            "category": "tablets",
+            "price": 250,
+            "description": "Compact and portable tablet for everyday use.",
+            "specification": [
+                  "8 inch HD Display",
+                  "3GB RAM",
+                  "32GB Storage"
+            ],
+            "availability": true,
+            "rating": 4.3
+      }
+]
