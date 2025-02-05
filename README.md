@@ -37,5 +37,8 @@ For handling and managing data within Gadget Shop:
 5. **Responsive Design**: The website is fully responsive, ensuring a smooth experience across devices from mobile to desktop.
 
 ---
+## dependencies
+```
+
 
 
